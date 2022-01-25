@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dr-poc-svc
+  labels:
+    app: dr-poc-app
+spec:
+  type: NodePort
+  ports:
+    - port: 3002
+      targetPort: 3002
+      protocol: TCP
+  selector:
+    app: dr-poc-app

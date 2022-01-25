@@ -1,0 +1,6 @@
+namespace: mcs-apps
+resources:
+- namespace.yaml
+- subscription.yaml
+- channel.yaml
+- application.yaml
