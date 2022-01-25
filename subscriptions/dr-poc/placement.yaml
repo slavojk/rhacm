@@ -1,0 +1,15 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: dr-poc-placement
+  namespace: dr-poc
+  labels:
+    app: dr-poc-app
+spec:
+  clusterConditions:
+    - status: 'True'
+      type: ManagedClusterConditionAvailable
+  clusterReplicas: 1
+  clusterSelector:
+    matchLabels:
+      dr: 'yes'
