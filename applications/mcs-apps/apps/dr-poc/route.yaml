@@ -1,13 +1,13 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: helloworld-app-route
+  name: dr-poc-route
   labels:
     app: dr-poc-app
 spec:
   to:
     kind: Service
-    name: helloworld-app-svc
+    name: dr-poc-svc
     weight: 100
   port:
     targetPort: 3002
