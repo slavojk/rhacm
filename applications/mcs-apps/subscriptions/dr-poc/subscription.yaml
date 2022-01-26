@@ -2,7 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
   name: dr-poc-subscription
-  namespace: dr-poc
+  namespace: mcs-apps
   labels:
     app: dr-poc-app
   annotations:
