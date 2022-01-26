@@ -13,3 +13,4 @@ spec:
   clusterSelector:
     matchLabels:
       dr: 'yes'
+      site: 'A'
